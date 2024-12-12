@@ -110,9 +110,21 @@ console.log(sumAll([]));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function allPositive() {
+function allPositive(array) {
+  let positiveNumbers = [];
 
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > 0) {
+      positiveNumbers.push(array[i]);
+    }
+  }
+
+  return positiveNumbers;
 }
+
+console.log(allPositive ( [ 1, -3, 4, 0, -2, 7 ] ) );
+console.log(allPositive ( [ -5, -8, -1 ] ) );
+console.log(allPositive ( [ ] ) );
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
