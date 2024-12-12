@@ -25,25 +25,28 @@ console.log(helloName( 'Habibi' ) );
 // 3. Function to add two numbers together & return the result
 function addNumbers(firstNumber, secondNumber) { // Declare your function and then insert your parameters inside the parantheses
   return firstNumber + secondNumber; // Return what you want the function to do which in this case is add two numbers
-  // console.log('Your two added numbers equal:', addNumbers );
 }
 console.log(addNumbers( 2, 3 ) );
 console.log(addNumbers( 12, 18) );
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(firstNumber, secondNumber, thirdNumber) {
+  return firstNumber * secondNumber * thirdNumber;
 }
 
+console.log(multiplyThree( 2, 6, 9) );
+console.log(multiplyThree(13, 100, 2) );
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
-    return;
-  }
-  return;
+    return true;
+  }else
+  return false;
 }
+console.log(isPositive (8) );
+console.log(isPositive( -8 ) );
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 
