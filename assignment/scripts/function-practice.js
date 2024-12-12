@@ -53,9 +53,15 @@ console.log(isPositive( -8 ) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
+let cities = ['Miami', 'Houston', 'Minneapolis', 'New York', 'Chicago', 'Los Angeles', 'Seattle', 'Philadelphia']; // declaring an array named cities with a list of cities
+let emptyArray = []; // declarinng an empty array with nothing in it
 function getLast(array) {
-
+  if( array.length === 0){
+  return undefined;
+} return array[array.length - 1];
 }
+console.log(getLast( cities ) );
+console.log(getLast( emptyArray ) );
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
