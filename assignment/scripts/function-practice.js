@@ -23,10 +23,12 @@ console.log(helloName( 'Clyde' ) );
 console.log(helloName( 'Habibi' ) );
 
 // 3. Function to add two numbers together & return the result
-function addNumbers(firstNumber) {
-  // return firstNumber + secondNumber;
+function addNumbers(firstNumber, secondNumber) { // Declare your function and then insert your parameters inside the parantheses
+  return firstNumber + secondNumber; // Return what you want the function to do which in this case is add two numbers
+  // console.log('Your two added numbers equal:', addNumbers );
 }
-
+console.log(addNumbers( 2, 3 ) );
+console.log(addNumbers( 12, 18) );
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree() {
