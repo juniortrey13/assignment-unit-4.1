@@ -66,9 +66,16 @@ console.log(getLast( emptyArray ) );
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+let pets = [ 'Dog', 'Cat', 'Turtle', 'Parrot', 'Hamster', 'Fish', 'Snake' ];
 function find(value, array) {
-
+  for (let i = 0; i < array.length; i++) {
+    if (array[i]=== value ){
+      return true;
+    }
+} return false;
 }
+console.log( find('Cat', pets ) );
+console.log( find('Bear', pets ) );
 
 // ----------------------
 // Stretch Goals
